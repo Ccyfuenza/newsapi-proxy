@@ -3,7 +3,7 @@ const axios = require('axios');
 const cors = require('cors');
 
 const app = express();
-app.use(cors());
+app.use(cors({ origin: '*' }));
 
 const PORT = process.env.PORT || 3000;
 const NEWSAPI_KEY = '53245ece38bf4705ae1f3c0180e574d5';
